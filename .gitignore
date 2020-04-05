@@ -1,0 +1,6 @@
+# 忽略所有的后缀名为.exe，.o，.a的文件
+*.exe
+*.[oa] 
+
+# 忽略testG5.txt文件
+testG5.txt
