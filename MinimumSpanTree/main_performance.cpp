@@ -28,8 +28,8 @@ int main() {
     string filename4 = "testG4.txt";
     int V4 = 10000;
 
-    string filename5 = "testG5.txt";
-    int V5 = 1000000;
+    // string filename5 = "testG5.txt";
+    // int V5 = 1000000;
 
 
     // ÎÄ¼þ¶ÁÈ¡
@@ -49,9 +49,9 @@ int main() {
     ReadGraph<SparseGraph<double>, double> readGraph4(g4, filename4);
     cout << filename4 << " load successfully." << endl;
 
-    SparseGraph<double> g5 = SparseGraph<double>(V5, false);
-    ReadGraph<SparseGraph<double>,double> readGraph5(g5, filename5);
-    cout<<filename5<<" load successfully."<<endl;
+    // SparseGraph<double> g5 = SparseGraph<double>(V5, false);
+    // ReadGraph<SparseGraph<double>,double> readGraph5(g5, filename5);
+    // cout<<filename5<<" load successfully."<<endl;
 
     cout << endl;
 
@@ -81,10 +81,10 @@ int main() {
     endTime = clock();
     cout << "Test for G4: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
 
-    startTime = clock();
-    LazyPrimMST<SparseGraph<double>, double> lazyPrimMST5(g5);
-    endTime = clock();
-    cout<<"Test for G5: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
+    // startTime = clock();
+    // LazyPrimMST<SparseGraph<double>, double> lazyPrimMST5(g5);
+    // endTime = clock();
+    // cout<<"Test for G5: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
 
     cout << endl;
 
@@ -112,10 +112,10 @@ int main() {
     endTime = clock();
     cout << "Test for G4: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
 
-    startTime = clock();
-    PrimMST<SparseGraph<double>, double> PrimMST5(g5);
-    endTime = clock();
-    cout<<"Test for G5: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
+    // startTime = clock();
+    // PrimMST<SparseGraph<double>, double> PrimMST5(g5);
+    // endTime = clock();
+    // cout<<"Test for G5: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
 
     cout << endl;
 
@@ -142,10 +142,10 @@ int main() {
     endTime = clock();
     cout << "Test for G4: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
 
-    startTime = clock();
-    KruskalMST<SparseGraph<double>, double> KruskalMST5(g5);
-    endTime = clock();
-    cout << "Test for G5: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+    // startTime = clock();
+    // KruskalMST<SparseGraph<double>, double> KruskalMST5(g5);
+    // endTime = clock();
+    // cout << "Test for G5: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
 
     system("pause");
     return 0;
